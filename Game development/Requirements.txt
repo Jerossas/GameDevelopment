@@ -1,0 +1,16 @@
+Requirements 
+
+importar tiles
+load maps
+view current map
+
+
+try {
+            Image image = ImageIO.read(new File("./src/tiles/default_tile.png")).getScaledInstance(32, 32, Image.SCALE_DEFAULT);
+            ImageIcon ii = new ImageIcon(image);
+            
+            JLabel label = new JLabel(ii);
+            gridPanel.add(label);
+        } catch (IOException ex) {
+            Logger.getLogger(EditorPanel.class.getName()).log(Level.SEVERE, null, ex);
+        }
